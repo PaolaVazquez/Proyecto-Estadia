@@ -1,0 +1,37 @@
+.navbar-brand img{
+    height: 60px;
+}
+.navbar-nav{
+    margin-right: 10px;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/vallarta_1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
+    color: #ccc;
+    margin-right: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
+    margin-right: 20px;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom 0.2s;
+}
+#RaQ{
+    color: white;
+    background-color: #FA5E50 ;
+}
+.text-header{
+    float: left;
+    margin-left:50px;
+}
+.text-header p, h1{
+    color: white;
+    text-align: justify;
+}
+.form-1{
+    color: white;
+}
