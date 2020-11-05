@@ -84,6 +84,12 @@
         </div>
 
     </header>
+
+    <div class="desc">
+      <h1>MEXICO</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Voluptatibus architecto officiis atque exercitationem, officia nesciunt neque placeat dolore? Eius obcaecati, non hic laboriosam nulla nihil asperiores recusandae quod iste rem.</p>
+    </div>
     
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

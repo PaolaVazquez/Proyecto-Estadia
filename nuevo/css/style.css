@@ -1,0 +1,222 @@
+.navbar-brand img{
+    height: 60px;
+}
+.navbar-nav{
+    margin-right: 10px;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Delfines.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
+    color: #ccc;
+    margin-right: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
+    margin-right: 20px;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom 0.2s;
+}
+#RaQ{
+    color: white;
+    background-color: #FA5E50 ;
+}
+.text-header{
+    float: left;
+    margin-left:50px;
+}
+.text-header p, h1{
+    color: white;
+    text-align: justify;
+}
+.text-encabezado{
+    text-align: center;
+    margin-top: 100px;
+    padding: 0 0 0 60px;
+}
+@media(max-width:767px){
+    .text-encabezado{
+        font-size: 1.5em;
+        margin-top: -10px;
+
+    }
+}
+#form-1{
+    color: white;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#form-1 .btn-primary{
+    background-color: #ccc;
+    border-radius: 20px;
+    border-color: #ccc;
+    margin-left: 150px;
+}
+@media(max-width:767px){
+    #form-1{
+        color: white;
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+    .btn-primary{
+        margin-top: -50px;
+        background: #ccc;
+    }
+}
+.desc h1{
+    color: black;
+    text-align: center;
+    padding: 30px 0 0 0 ;
+
+}
+.desc p{
+    color: black;
+    text-align: center;
+    padding: 10px 60px 30px 60px; 
+}
+/*DESTINOS*/
+.imagen img{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+.description h1, p{
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+}
+@media(max-width:767px){
+    .description h1, p{
+        text-align: center;
+        color: black;
+        margin-top: -30px;
+    }
+    .description h1{
+        font-size: 1.5em;
+    }
+    .description p{
+        font-size: 0.8em;
+    }
+}
+/*FOOTER*/
+footer{
+    background-color: #ccc;
+    width: 100%;
+    position: absolute;
+    margin-top: 60px;
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+.direction{
+    padding: 20px;
+    float: left;
+    width: 20%;
+    color: white;
+  }
+  .centro{
+    padding: 20px;
+    float: left;
+    width: 50%;
+    text-align: center;
+  }
+  .redes{
+    padding: 20px;
+    float: right;
+    width: 20%;
+  }
+  .redes img{
+      width: 100%;
+      height: auto;
+      max-width: 70px;
+  }
+  @media screen and(max-width:767px){
+    .direction, .centro, .redes{
+      width: 100%;
+      }
+    }
+    /*BLOG*/
+    /*FOTOS*/
+    .header-photos{
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/optimizada_los-cabos.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .text-encabezado-blog{
+        text-align: center;
+        margin-top: 300px;
+        margin-left: 700px;
+    }
+    @media(max-width:767px){
+        .text-encabezado-blog{
+            text-align: center;
+            margin-top: 200px;
+            margin-left: -30px;
+        }
+    }
+
+    /*GALLERY*/
+    .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%; }
+        .gallery .pics {
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease; }
+        .gallery .animation {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+        
+        @media (max-width: 450px) {
+        .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+        }
+        }
+        
+        @media (max-width: 400px) {
+        .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        }
+        }
+/*VIDEOS*/
+.header-videos{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/GettyImages-913710180.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*CONTACT US*/
+.header-contact{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Palmar-Puerto-Vallarta-Bay-Breeze-Spa-8.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+/*FAQ'S*/
+.header-faqs{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Mar-Puerto-Vallarta-Beach-6-.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
