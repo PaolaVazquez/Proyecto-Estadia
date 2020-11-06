@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@font-face{
+    font-family: "Titulos";
+    src: url("../css/fonts/Zing_2.otf");
+}
+h1{
+    font-family: "Titulos";
+    color: #695B68;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #695B68;   
+}
 .navbar-brand img{
     height: 60px;
 }
@@ -34,7 +47,7 @@
 }
 .text-encabezado{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 200px;
     padding: 0 0 0 60px;
 }
 @media(max-width:767px){
@@ -54,6 +67,7 @@
     border-radius: 20px;
     border-color: #ccc;
     margin-left: 150px;
+    font-family: "Titulos";
 }
 @media(max-width:767px){
     #form-1{
@@ -64,7 +78,15 @@
     .btn-primary{
         margin-top: -50px;
         background: #ccc;
+        font-family: "Titulos";
     }
+}
+#form-1 h2{
+    font-family: "Titulos";
+    font-size: 2em;
+}
+input, label{
+    font-family: 'Raleway', sans-serif; 
 }
 .desc h1{
     color: black;
@@ -92,7 +114,7 @@
     .description h1, p{
         text-align: center;
         color: black;
-        margin-top: -30px;
+        margin-top: 30px;
     }
     .description h1{
         font-size: 1.5em;
@@ -100,13 +122,19 @@
     .description p{
         font-size: 0.8em;
     }
+    .imagen img{
+        margin-top: 30px;
+    }
+}
+.destinos{
+  padding: 10px 80px 10px 80px;
 }
 /*FOOTER*/
 footer{
     background-color: #ccc;
     width: 100%;
     position: absolute;
-    margin-top: 60px;
+
     background-size: cover;
     padding-top: 40px;
     padding-left: 30px;
@@ -121,7 +149,7 @@ footer{
   .centro{
     padding: 20px;
     float: left;
-    width: 50%;
+    width: 60%;
     text-align: center;
   }
   .redes{
@@ -129,16 +157,32 @@ footer{
     float: right;
     width: 20%;
   }
-  .redes img{
+ .redes img{
       width: 100%;
       height: auto;
-      max-width: 70px;
+      max-width: 50px;
   }
   @media screen and(max-width:767px){
     .direction, .centro, .redes{
       width: 100%;
       }
     }
+#footer {
+    background: #ccc;
+    color: #fff;
+      }
+#footer i {
+    padding-right: 2px;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+#footer i:hover {
+    color: #EAB13C;
+    transition: all ease 0.1s;
+}
+#footer h4 {
+    font-size: 1.4em;
+}
     /*BLOG*/
     /*FOTOS*/
     .header-photos{
@@ -202,7 +246,21 @@ footer{
     background-attachment: fixed;
     background-position: center;
 }
-
+#videos video{
+    border-radius: 10px;
+    
+}
+@media(max-width:767px){
+    #videos  video{
+        max-height: 250px;
+    }
+}
+#tres-col{
+    margin-top: 50px;
+}
+#dos-col{
+    margin-top: 100px;
+}
 /*CONTACT US*/
 .header-contact{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Palmar-Puerto-Vallarta-Bay-Breeze-Spa-8.jpg);
@@ -212,11 +270,73 @@ footer{
     background-position: center;
 }
 /*FAQ'S*/
-.header-faqs{
+.body{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Mar-Puerto-Vallarta-Beach-6-.jpg);
     height: 100vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 }
-
+#Container-faqs{
+    background-color: transparent;
+    align-items: center;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .faq{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: white;
+    margin-top: 20px;
+  }
+  .title{
+    color: #48B4C8;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  @media(max-width:767px){
+      .title{
+          font-size: 1.5em;
+      }
+  }
+  .collapsible {
+    background-color: #695B68;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:white;
+  }
+  .content p{
+      margin-top: 10px;
+      color: black;
+  }
+  .col-8{
+    border-radius: 10px;
+  }
