@@ -480,18 +480,48 @@ option{
 }
 /*CONSULTAR*/
 .datos-tabla{
-    width: 900px;
-    border: 1px solid #48B4C8;
-    
-
+    width: 900px;  
+    color: white;
+    margin-left: 500px;
+    margin-top: 100px;
 }
 table{
     width: 900px;
+    border: 1px solid #48B4C8;
     
 }
 th{
     text-align: center;
     font-size: 1.5em;
+}
+.buscar{
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #48B4C8;
+    width: 800px;
+    margin-left: 550px;
+}
+.buscar i{
+    width: 26px;
+    text-align: center;
+    color: white;
+}
+.buscar input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 600px;
+    margin: 10px;
+}
+.consul-U h1{
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    text-align: center;
+
 }
 /*HOME EDIT*/
 .titulo{
@@ -536,11 +566,25 @@ input{
     border-bottom: 1px solid #48B4C8;
 }
 /*MENU WP*/
-.datos-WP{
-    width: 100%;
-    overflow: hidden;
-    font-size: 20px;
-    padding: 8px 0;
+.datos-WP li a{
+    text-decoration: none;
+    padding: 10px;
     margin: 8px 0;
-    
+    display: inline-block;
+}
+.datos-WP{
+    padding: 0;
+}
+.datos-WP li{
+    display: inline-block;
+    padding: 0 20px 0 15px;
+}
+.WP-edit h1{ 
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    text-align: center;
+}
+.WP-edit ul{
+   margin-left: 500px;
+   margin-top: 50px;
 }
