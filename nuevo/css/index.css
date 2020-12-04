@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&display=swap');
+@font-face{
+    font-family: "Titulos";
+    src: url("../css/fonts/Zing_2.otf");
+}
+h1{
+    font-family: "Titulos";
+    color: #695B68;
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #695B68;   
+}
+.navbar-brand img{
+    height: 60px;
+}
+.navbar-nav{
+    margin-right: 10px;
+}
+.header{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Delfines.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited {
+    color: #ccc;
+    margin-right: 20px;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active {
+    margin-right: 20px;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom 0.2s;
+}
+#RaQ{
+    color: white;
+    background-color: #FA5E50 ;
+}
+.text-header{
+    float: left;
+    margin-left:50px;
+}
+.text-header p, h1{
+    color: white;
+    text-align: justify;
+}
+.text-encabezado{
+    text-align: center;
+    margin-top: 200px;
+    padding: 0 0 0 60px;
+}
+@media(max-width:767px){
+    .text-encabezado{
+        font-size: 1.5em;
+        margin-top: -10px;
+
+    }
+}
+#form-1{
+    color: white;
+    margin-top: 100px;
+    margin-left: 500px;
+}
+#form-1 .btn-primary{
+    background-color: #ccc;
+    border-radius: 20px;
+    border-color: #ccc;
+    margin-left: 150px;
+    font-family: "Titulos";
+}
+@media(max-width:767px){
+    #form-1{
+        color: white;
+        margin-top: 10px;
+        margin-left: -50px;
+    }
+    .btn-primary{
+        margin-top: -50px;
+        background: #ccc;
+        font-family: "Titulos";
+    }
+}
+#form-1 h2{
+    font-family: "Titulos";
+    font-size: 2em;
+}
+input, label{
+    font-family: 'Raleway', sans-serif; 
+}
+.desc h1{
+    color: black;
+    text-align: center;
+    padding: 30px 0 0 0 ;
+
+}
+.desc p{
+    color: black;
+    text-align: center;
+    padding: 10px 60px 30px 60px; 
+}
+/*DESTINOS*/
+.imagen img{
+    width: 100%;
+    height: auto;
+    max-width: 700px;
+}
+.description h1, p{
+    text-align: center;
+    color: black;
+    margin-top: 100px;
+}
+@media(max-width:767px){
+    .description h1, p{
+        text-align: center;
+        color: black;
+        margin-top: 30px;
+    }
+    .description h1{
+        font-size: 1.5em;
+    }
+    .description p{
+        font-size: 0.8em;
+    }
+    .imagen img{
+        margin-top: 30px;
+    }
+}
+.destinos{
+  padding: 10px 80px 10px 80px;
+}
+/*FOOTER*/
+footer{
+    background-color: #ccc;
+    width: 100%;
+    position: absolute;
+
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+  }
+.direction{
+    padding: 20px;
+    float: left;
+    width: 20%;
+    color: white;
+  }
+  .centro{
+    padding: 20px;
+    float: left;
+    width: 60%;
+    text-align: center;
+  }
+  .redes{
+    padding: 20px;
+    float: right;
+    width: 20%;
+  }
+ .redes img{
+      width: 100%;
+      height: auto;
+      max-width: 50px;
+  }
+  @media screen and(max-width:767px){
+    .direction, .centro, .redes{
+      width: 100%;
+      }
+    }
+#footer {
+    background: #ccc;
+    color: #fff;
+      }
+#footer i {
+    padding-right: 2px;
+    cursor: pointer;
+    transition: all ease 0.1s;
+}
+#footer i:hover {
+    color: #EAB13C;
+    transition: all ease 0.1s;
+}
+#footer h4 {
+    font-size: 1.4em;
+}
+    /*BLOG*/
+    /*FOTOS*/
+    .header-photos{
+        background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/optimizada_los-cabos.jpg);
+        height: 100vh;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .text-encabezado-blog{
+        text-align: center;
+        margin-top: 300px;
+        margin-left: 700px;
+    }
+    @media(max-width:767px){
+        .text-encabezado-blog{
+            text-align: center;
+            margin-top: 200px;
+            margin-left: -30px;
+        }
+    }
+
+    /*GALLERY*/
+    .gallery {
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        -webkit-column-width: 33%;
+        -moz-column-width: 33%;
+        column-width: 33%; }
+        .gallery .pics {
+        -webkit-transition: all 350ms ease;
+        transition: all 350ms ease; }
+        .gallery .animation {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1); }
+        
+        @media (max-width: 450px) {
+        .gallery {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+        }
+        }
+        
+        @media (max-width: 400px) {
+        .btn.filter {
+        padding-left: 1.1rem;
+        padding-right: 1.1rem;
+        }
+        }
+/*VIDEOS*/
+.header-videos{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/GettyImages-913710180.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#videos video{
+    border-radius: 10px;
+    
+}
+@media(max-width:767px){
+    #videos  video{
+        max-height: 250px;
+    }
+}
+#tres-col{
+    margin-top: 50px;
+}
+#dos-col{
+    margin-top: 100px;
+}
+/*CONTACT US*/
+.header-contact{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Palmar-Puerto-Vallarta-Bay-Breeze-Spa-8.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.contact-box{
+    width: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.textbox-contact{
+    width: 100%;
+      overflow: hidden;
+      font-size: 20px;
+      padding: 8px 0;
+      margin: 8px 0;
+     
+}
+.contact-box h1{
+    text-align: center;
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    margin-bottom: 50px;
+    padding: 13px 0 ;
+}
+/*FAQ'S*/
+.body{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Mar-Puerto-Vallarta-Beach-6-.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+#Container-faqs{
+    background-color: transparent;
+    align-items: center;
+    max-width: 1000px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+  }
+  .faq{
+    background-color: transparent;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border: white;
+    margin-top: 20px;
+  }
+  .title{
+    color: #48B4C8;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  @media(max-width:767px){
+      .title{
+          font-size: 1.5em;
+      }
+  }
+  .collapsible {
+    background-color: #695B68;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color:white;
+  }
+  .content p{
+      margin-top: 10px;
+      color: black;
+  }
+  .col-8{
+    border-radius: 10px;
+  }
+  /*INICIO SESIÓN*/
+  .login-box{
+      width: 280px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+  }
+  .login-box h1{
+      float: left;
+      font-size: 40px;
+      border-bottom: 6px solid #48B4C8;
+      margin-bottom: 50px;
+      padding: 13px 0 ;
+  }
+  .textbox{
+      width: 100%;
+      overflow: hidden;
+      font-size: 20px;
+      padding: 8px 0;
+      margin: 8px 0;
+      border-bottom: 1px solid #48B4C8;
+  }
+  .textbox i{
+      width: 26px;
+      float: left;
+      text-align: center;
+  }
+  .textbox input{
+      border: none;
+      outline: none;
+      background: none;
+      color: white;
+      font-size: 18px;
+      width: 80%;
+      float: left;
+      margin: 0 10px;
+  }
+  .btn-login{
+      width: 100%;
+      background: none;
+      border: 2px solid #48B4C8;
+      color: white;
+      padding: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      margin: 12px 0;
+  }
+  /*PERFIL, ADD, EDIT*/
+.perfil{
+    width: 680px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.perfil h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    margin-bottom: 50px;
+    padding: 13px 0 ;
+}
+.datos{
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #48B4C8;
+}
+.datos input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    float: left;
+    margin: 0 10px;
+}
+.datos i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+.btn-add{
+    width: 100%;
+    background: none;
+    border: 2px solid #48B4C8;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;   
+    max-width: 300px;  
+    margin-left: 20px;
+}
+select{
+    width: 100%;
+    background: none;
+    border: 2px solid #48B4C8;
+    color: white;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 12px 0;
+    max-width: 280px;  
+}
+option{
+    color: black;
+}
+/*CONSULTAR*/
+.datos-tabla{
+    width: 900px;  
+    color: white;
+    margin-left: 500px;
+    margin-top: 100px;
+}
+table{
+    width: 900px;
+    border: 1px solid #48B4C8;
+    
+}
+th{
+    text-align: center;
+    font-size: 1.5em;
+}
+.buscar{
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #48B4C8;
+    width: 800px;
+    margin-left: 550px;
+}
+.buscar i{
+    width: 26px;
+    text-align: center;
+    color: white;
+}
+.buscar input{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 600px;
+    margin: 10px;
+}
+.consul-U h1{
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    text-align: center;
+
+}
+/*HOME EDIT*/
+.titulo{
+    margin-left: 800px;
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    margin-bottom: 50px;
+    padding: 13px 0 ;
+    width: 350px;
+}
+.titulo h1{
+    font-size: 1.2em;
+    text-align: center;
+}
+.header-edit{
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Villa-del-Palmar-Puerto-Vallarta-Bay-Breeze-Spa-8.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.datos-home{
+ border-right: 1px solid #48B4C8;
+
+}
+.home h1, h2, label, h3{
+    color: white;
+    margin-bottom: 10px;
+}
+input{
+    margin-bottom: 10px;
+}
+#description{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 90%;
+    float: left;
+    margin: 0 10px;
+    border-bottom: 1px solid #48B4C8;
+}
+/*MENU WP*/
+.datos-WP li a{
+    text-decoration: none;
+    padding: 10px;
+    margin: 8px 0;
+    display: inline-block;
+}
+.datos-WP{
+    padding: 0;
+}
+.datos-WP li{
+    display: inline-block;
+    padding: 0 20px 0 15px;
+}
+.WP-edit h1{ 
+    font-size: 40px;
+    border-bottom: 6px solid #48B4C8;
+    text-align: center;
+}
+.WP-edit ul{
+   margin-left: 500px;
+   margin-top: 50px;
+}
+
+/** efecto*/
+#portfolio{
+    padding: 40px;
+    margin: 0 auto;
+}
+.gallery-title{
+    font-size: 36px;
+    color:#db584e;
+    text-align: center;
+    font-weight: 700;
+    padding: 40px 20px 60px;
+}
+.filter-button{
+    font-size: 18px;
+    border: 1px solid #db584e;
+    border-radius: 5px;
+    text-align: center;
+    color: #db584e;
+    margin-bottom: 30px;
+
+}
+.filter-button:hover{
+    font-size: 18px;
+    border: 1px solid #db584e;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    background-color: #db584e;
+}
+.btn-default:active .filter-button:active{
+    background-color: #db584e;
+    color: #fff;
+}
+.gallery_product{
+    margin-bottom: 30px;
+}
