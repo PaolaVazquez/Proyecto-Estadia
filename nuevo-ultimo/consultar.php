@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MKTEAM | CONSULT USER</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -11,7 +11,7 @@
 <body>
     <header class="header-contact">
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="index.html"><img src="img/MKT_Log in Logo-01.png" alt="Save to Travel"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/MKT_Log in Logo-01.png" alt="MKT"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -39,53 +39,52 @@
                         PROFILE
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="vista-admin.html">MY PROFILE</a>
-                        <a class="dropdown-item" href="agregar.html">ADD USER</a>
-                        <a class="dropdown-item" href="edit-user.html">EDIT USER</a>
-                        <a class="dropdown-item" href="consultar.html">CONSULT USER</a>
-                        <a class="dropdown-item" href="consultar.html">CONSULT USER</a>
-                        <a class="dropdown-item" href="">Sign Out</a>
+                        <a class="dropdown-item" href="vista-admin.php">MY PROFILE</a>
+                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a> 
+                        <a class="dropdown-item" href="agregar.php">ADD USER</a>
+                        <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
+                        <a class="dropdown-item" href="consultar.php">CONSULT USER</a>
+                        <a class="dropdown-item" href="consultar-lead.php">CONSULT LEADS</a>
+                        <a class="dropdown-item" href="">SIGN OUT</a>
 
                 </li>
               </ul>
             </div>
           </nav>
+         <div class="consul-U">
+          <h1>CONSULT USER</h1>
+          <div class="buscar">
+            <label>First Name:</label>
+            <input type="text">
+            <i class="fas fa-search"></i>
+          </div>
+          <div class="datos-tabla">
+            <table border="1">
+              <thead >
+                  <tr>
+                      <th>ID-USER</th>
+                      <th>First Name</th>
+                      <th>Last Name</th>
+                      <th>E-mail</th>
+                      <th>Type of User</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>1</td>
+                      <td>Paola</td>
+                      <td>Vazquez</td>
+                      <td>paola.vazra98@gmail.com</td>
+                      <td>Editor</td>
 
-            <div class="perfil">
-                <h1>EDIT USER</h1>
-                <div class="datos">
-                    <label>First Name:  </label>
-                    <input type="text">
-                </div>
-
-                <div class="datos">
-                    <label>Last Name:</label>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="datos">
-                    <label for="">Email:</label>
-                    <input type="email">
-                </div>
-                <div class="datos">
-                    <label>Phone:</label>
-                    <input type="text">
-                </div>
-                <div class="datos">
-                    <label>Type of User: </label>
-                    <select name="Users" id="users">
-                        <option value="select">Select</option>
-                        <option value="Editor">Editor</option>
-                        <option value="Admin">Administrator</option>
-                    </select>
-
-                </div>
-                <input class="btn-add" type="button" value="SAVE">
-                <input class="btn-add" type="button" value="CANCEL">
-
-            </div>
-
+                  </tr>
+              </tbody>
+          </table>
+          </div>
+         </div>
     </header>
 
+   
     <footer>
         <div class="container-fluid">
           <div class="row rowspacing text-center">
@@ -99,9 +98,9 @@
               <h2>#NO JUZGO</h2>
             </div>
             <div class="redes col-sm-4">
-                <a href=""> <img src="img/MKT_Iconos FB IG-01.png" alt="Save to Travel"> </a>
-                <a href=""> <img src="img/MKT_Iconos FB IG-02.png" alt="Save to Travel"> </a>
-                <a href=""> <img src="img/MKT_Log in Logo-01.png" alt="Save to Travel"> </a>
+                <a href=""> <img src="img/MKT_Iconos FB IG-01.png" alt="MKT"> </a>
+                <a href=""> <img src="img/MKT_Iconos FB IG-02.png" alt="MKT"> </a>
+                <a href=""> <img src="img/MKT_Log in Logo-01.png" alt="MKT"> </a>
             </div>
           </div>
   

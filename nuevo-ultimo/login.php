@@ -11,7 +11,7 @@
 <body>
     <header class="header-contact">
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="index.html"><img src="img/MKT_Log in Logo-01.png" alt="Save to Travel"></a>
+            <a class="navbar-brand" href="index.html"><img src="img/MKT_Log in Logo-01.png" alt="MKT"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -37,21 +37,21 @@
               </ul>
             </div>
           </nav>
-
+    <form action="validar.php" method="POST">
          <div class="login-box">
              <h1>LOGIN</h1>
              <div class="textbox">
                 <i class="fas fa-user"></i>
-                 <input type="text" placeholder="Username" name="" >
+                 <input type="text" placeholder="Username" name="usuario" >
                 </div>
                 <div class="textbox">
                     <i class="fas fa-lock"></i>
-                    <input type="text" placeholder="Password" name="">
+                    <input type="password" placeholder="Password" name="contrasena">
                 </div>
-                <a href="perfil.html">
+                <a href="">
                 <input class="btn-login" type="button" name="" value="Sign in" ></a>
          </div>
-
+        </form>
     </header>
 
     <footer>
