@@ -39,8 +39,9 @@
                         PROFILE
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="perfil.html">My Profile</a> 
-                        <a class="dropdown-item" href="">Sign Out</a>
+                        <a class="dropdown-item" href="perfil.html">MY PROFILE</a>
+                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>  
+                        <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
               </ul>

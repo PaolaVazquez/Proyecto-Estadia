@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,7 +38,7 @@
               </ul>
             </div>
           </nav>
-    <form action="validar.php" method="POST">
+    <form action="ingresar.php" method="POST">
          <div class="login-box">
              <h1>LOGIN</h1>
              <div class="textbox">
@@ -49,7 +50,7 @@
                     <input type="password" placeholder="Password" name="contrasena">
                 </div>
                 <a href="">
-                <input class="btn-login" type="button" name="" value="Sign in" ></a>
+                <input class="btn-login" type="submit" name="" value="Sign in" ></a>
          </div>
         </form>
     </header>

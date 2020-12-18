@@ -45,49 +45,55 @@
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
                         <a class="dropdown-item" href="consultar.php">CONSULT USER</a>
                         <a class="dropdown-item" href="consultar-lead.php">CONSULT LEADS</a>
-                        <a class="dropdown-item" href="">SIGN OUT</a>
+                        <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
               </ul>
             </div>
           </nav>
+          <form action="agregar-user.php"  method="POST">
           <div class="perfil">
                 <h1>ADD USER</h1>
                 <div class="datos">
                     <label>First Name:  </label>
-                    <input type="text">
+                    <input type="text" name="FNAME" require >
                 </div>
 
                 <div class="datos">
                     <label>Last Name:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="LNAME" id="" require>
                   </div>
-                  <div class="datos">
-                      <label for="">Email:</label>
-                      <input type="email">
-                  </div>
-                  <div class="datos">
-                      <label>Phone:</label>
-                      <input type="text">
-                  </div>
+                  
                   <div class="datos">
                     <label>Password:</label>
-                    <input type="password">
+                    <input type="password" name="PASSWORD" require>
+                </div>
+                <div class="datos">
+                    <label>Position:</label>
+                    <input type="text" name="POSITION" require>
                 </div>
                   <div class="datos">
                       <label>Type of User: </label>
-                      <select name="Users" id="users">
+                      <select name="ACCESS" id="users" require>
                           <option value="select">Select</option>
                           <option value="Editor">Editor</option>
                           <option value="Admin">Administrator</option>
                       </select>
 
                   </div>
-                  <input class="btn-add" type="button" value="SAVE">
-                  <input class="btn-add" type="button" value="CANCEL">
+                  <div class="datos">
+                      <label for="">Email:</label>
+                      <input type="email" name="EMAIL" require>
+                  </div>
+                  <div class="datos">
+                      <label>Phone:</label>
+                      <input type="text" name="PHONE" require>
+                  </div>
+                  <input class="btn-add" type="submit"value="SAVE" onclick="usuarioRegistrado()">
+                  <input class="btn-add" type="submit" value="CANCEL" >
 
         </div>
-
+        </form>
     </header>
 
     <footer>
