@@ -52,32 +52,10 @@
             </div>
           </nav>
 
-          <div class="perfil">
-            <h1>PROFILE</h1>
-            <div class="datos">
-                <label>First Name:  </label>
-                <input type="text">
-            </div>
-
-            <div class="datos">
-                <label>Last Name:</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="datos">
-                <label for="">Email:</label>
-                <input type="email">
-            </div>
-            <div class="datos">
-                <label>Phone:</label>
-                <input type="text">
-            </div>
-            <div class="datos">
-                <label>Type of User: </label>
-               <input type="text">
-            </div>
-            
-
-        </div>
+          <?php
+    include("muestra-user.php");
+  
+  ?>
 
     </header>
 

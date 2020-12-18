@@ -52,13 +52,13 @@
             </div>
           </nav>
          <div class="consul-U">
-          <h1>CONSULT LEADS</h1>
-          <div class="buscar">
-            <label>First Name:</label>
-            <input type="text">
-            <i class="fas fa-search"></i>
-          </div>
-          <div class="datos-tabla">
+            <h1>CONSULT LEADS</h1>
+              <div class="buscar">
+                <label for="caja_busqueda" id="buscar">Search: </label>
+                <input type="text" name="caja_busqueda" id="caja_busqueda">
+                <i class="fas fa-search" type="submit"></i>
+              </div>
+              <div class="datos-tabla">
             <table  border="1">
               <thead >
                   <tr>
@@ -67,23 +67,19 @@
                       <th>Last Name</th>
                       <th>Phone</th>
                       <th>E-mail</th>
+                      <th>Date Register</th>
                       
                   </tr>
               </thead>
               <tbody>
-                  <tr>
-                      <td>1</td>
-                      <td>Paola</td>
-                      <td>Vazquez</td>
-                      <td>3338398861</td>
-                      <td>paola.vazra98@gmail.com</td>
-                      
-
-                  </tr>
+                  <?php
+                    include("muestra-leads.php")
+                  ?>
               </tbody>
           </table>
           </div>
-         </div>
+        </div>
+         
     </header>
 
    
@@ -108,7 +104,7 @@
   
         </div>
       </footer>
-    
+    <script scr="js/filtro.js" ></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>  
 </body>

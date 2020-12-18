@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 </head>
 <body>
+
     <header class="header-contact">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <a class="navbar-brand" href="index.html"><img src="img/MKT_Log in Logo-01.png" alt="MKTEAM"></a>
@@ -48,36 +49,11 @@
               </ul>
             </div>
           </nav>
-
-          <div class="perfil">
-            <h1>PROFILE</h1>
-            <div class="datos">
-                <label>First Name:  </label>
-                <input type="text">
-            </div>
-
-            <div class="datos">
-                <label>Last Name:</label>
-                <input type="text" name="" id="">
-            </div>
-            <div class="datos">
-                <label for="">Email:</label>
-                <input type="email">
-            </div>
-            <div class="datos">
-                <label>Phone:</label>
-                <input type="text">
-            </div>
-            <div class="datos">
-                <label>Type of User: </label>
-               <input type="text">
-            </div>
-            
-
-        </div>
-
-
-
+          <?php
+    include("muestra-user.php");
+  
+  ?>
+         
     </header>
 
     <footer>
