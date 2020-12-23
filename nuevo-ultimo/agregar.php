@@ -43,8 +43,8 @@
                         <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a> 
                         <a class="dropdown-item" href="agregar.php">ADD USER</a>
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
-                        <a class="dropdown-item" href="consultar.php">CONSULT USER</a>
-                        <a class="dropdown-item" href="consultar-lead.php">CONSULT LEADS</a>
+                        <a class="dropdown-item" href="consultar.php"> USERS</a>
+                        <a class="dropdown-item" href="consultar-lead.php"> LEADS</a>
                         <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
 
                 </li>

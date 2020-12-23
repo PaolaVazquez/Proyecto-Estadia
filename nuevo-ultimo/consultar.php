@@ -43,8 +43,8 @@
                         <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a> 
                         <a class="dropdown-item" href="agregar.php">ADD USER</a>
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
-                        <a class="dropdown-item" href="consultar.php">CONSULT USER</a>
-                        <a class="dropdown-item" href="consultar-lead.php">CONSULT LEADS</a>
+                        <a class="dropdown-item" href="consultar.php"> USERS</a>
+                        <a class="dropdown-item" href="consultar-lead.php">LEADS</a>
                         <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
@@ -52,9 +52,9 @@
             </div>
           </nav>
          <div class="consul-U">
-          <h1>CONSULT USER</h1>
+          <h1>USERS</h1>
           <div class="buscar">
-            <label>First Name:</label>
+            <label>Search:</label>
             <input type="text">
             <i class="fas fa-search"></i>
           </div>
@@ -65,18 +65,17 @@
                       <th>ID-USER</th>
                       <th>First Name</th>
                       <th>Last Name</th>
-                      <th>E-mail</th>
+                      <th>Position</th>
+                      <th>Phone</th>
+                      <th>E-mail</th>                   
                       <th>Type of User</th>
                   </tr>
               </thead>
               <tbody>
                   <tr>
-                      <td>1</td>
-                      <td>Paola</td>
-                      <td>Vazquez</td>
-                      <td>paola.vazra98@gmail.com</td>
-                      <td>Editor</td>
-
+                  <?php
+                    include("muestra-user.php")
+                  ?>
                   </tr>
               </tbody>
           </table>

@@ -50,7 +50,7 @@
             </div>
           </nav>
           <?php
-    include("muestra-user.php");
+    include("muestra-perfil.php");
   
   ?>
          

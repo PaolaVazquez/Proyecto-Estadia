@@ -43,8 +43,8 @@
                         <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>  
                         <a class="dropdown-item" href="agregar.php">ADD USER</a>
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
-                        <a class="dropdown-item" href="consultar.php">CONSULT USER</a>
-                        <a class="dropdown-item" href="consultar-lead.php">CONSULT LEADS</a>
+                        <a class="dropdown-item" href="consultar.php"> USER</a>
+                        <a class="dropdown-item" href="consultar-lead.php"> LEADS</a>
                         <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
@@ -52,7 +52,7 @@
             </div>
           </nav>
          <div class="consul-U">
-            <h1>CONSULT LEADS</h1>
+            <h1>LEADS</h1>
               <div class="buscar">
                 <label for="caja_busqueda" id="buscar">Search: </label>
                 <input type="text" name="caja_busqueda" id="caja_busqueda">

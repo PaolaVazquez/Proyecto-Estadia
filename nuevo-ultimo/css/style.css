@@ -174,10 +174,10 @@ input, label{
 }
 /*FOOTER*/
 footer{
-    background-color: #ccc;
+    background-color: #384E77;
     width: 100%;
     position: absolute;
-
+    color: white;
     background-size: cover;
     padding-top: 40px;
     padding-left: 30px;
@@ -189,11 +189,18 @@ footer{
     width: 20%;
     color: white;
   }
+  .direction p{
+      color: white;
+  }
   .centro{
     padding: 20px;
     float: left;
     width: 60%;
     text-align: center;
+    color: white;
+  }
+  .centro p{
+      color: white;
   }
   .redes{
     padding: 20px;
@@ -212,7 +219,7 @@ footer{
     }
 #footer {
     background: #ccc;
-    color: #fff;
+    color: white;
       }
 #footer i {
     padding-right: 2px;
