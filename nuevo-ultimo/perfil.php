@@ -40,7 +40,7 @@
                         PROFILE
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="perfil.html">MY PROFILE</a>
+                        <a class="dropdown-item" href="perfil.php">MY PROFILE</a>
                         <a class="dropdown-item" href="wep-edit.html">EDIT WEB PAGE </a>
                         <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
                         

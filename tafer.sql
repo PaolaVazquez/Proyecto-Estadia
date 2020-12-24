@@ -2,10 +2,10 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Oct 30, 2020 at 11:42 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 24-12-2020 a las 21:03:55
+-- Versión del servidor: 10.4.14-MariaDB
+-- Versión de PHP: 7.4.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `tafer`
+-- Base de datos: `tafer`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `leads`
+-- Estructura de tabla para la tabla `leads`
 --
 
 CREATE TABLE `leads` (
@@ -32,37 +32,44 @@ CREATE TABLE `leads` (
   `Fname` varchar(50) DEFAULT NULL,
   `Lname` varchar(50) DEFAULT NULL,
   `Phone` varchar(15) DEFAULT NULL,
-  `Email` varchar(50) DEFAULT NULL
+  `Email` varchar(50) DEFAULT NULL,
+  `fecha-reg` date NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `leads`
+--
+
+INSERT INTO `leads` (`IdLead`, `Fname`, `Lname`, `Phone`, `Email`, `fecha-reg`) VALUES
+(1, 'Paola', 'Vazquez', '3338398861', 'paola.vazra@gmail.com', '2020-11-27'),
+(2, 'paola itzel', 'vazquez ramos', '1234567890', 'fgythryh@gmail.com', '2020-12-16');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mediaphotos`
+-- Estructura de tabla para la tabla `mediaphotos`
 --
 
 CREATE TABLE `mediaphotos` (
   `IdPhoto` int(11) NOT NULL,
-  `Name` varchar(50) DEFAULT NULL,
-  `Destination` varchar(50) NOT NULL
+  `Name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `mediavideos`
+-- Estructura de tabla para la tabla `mediavideos`
 --
 
 CREATE TABLE `mediavideos` (
   `IdVideo` int(11) NOT NULL,
-  `Name` varchar(50) DEFAULT NULL,
-  `Destination` varchar(50) DEFAULT NULL
+  `Name` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `post`
+-- Estructura de tabla para la tabla `post`
 --
 
 CREATE TABLE `post` (
@@ -77,42 +84,51 @@ CREATE TABLE `post` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Estructura de tabla para la tabla `users`
 --
 
-CREATE TABLE `user` (
+CREATE TABLE `users` (
   `IdUser` int(11) NOT NULL,
   `Fname` varchar(50) DEFAULT NULL,
   `Lname` varchar(50) DEFAULT NULL,
-  `Password` varchar(50) DEFAULT NULL,
+  `Pass` varchar(20) DEFAULT NULL,
   `Position` varchar(50) DEFAULT NULL,
-  `Acces` varchar(50) NOT NULL
+  `Phone` varchar(12) DEFAULT NULL,
+  `Email` varchar(50) DEFAULT NULL,
+  `Access` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexes for dumped tables
+-- Volcado de datos para la tabla `users`
+--
+
+INSERT INTO `users` (`IdUser`, `Fname`, `Lname`, `Pass`, `Position`, `Phone`, `Email`, `Access`) VALUES
+(1, 'paola itzel', 'vazquez ramos', '12345', 'Paola', '1234567890', 'paola.vazra98@gmail.com', 'Admin');
+
+--
+-- Índices para tablas volcadas
 --
 
 --
--- Indexes for table `leads`
+-- Indices de la tabla `leads`
 --
 ALTER TABLE `leads`
   ADD PRIMARY KEY (`IdLead`);
 
 --
--- Indexes for table `mediaphotos`
+-- Indices de la tabla `mediaphotos`
 --
 ALTER TABLE `mediaphotos`
   ADD PRIMARY KEY (`IdPhoto`);
 
 --
--- Indexes for table `mediavideos`
+-- Indices de la tabla `mediavideos`
 --
 ALTER TABLE `mediavideos`
   ADD PRIMARY KEY (`IdVideo`);
 
 --
--- Indexes for table `post`
+-- Indices de la tabla `post`
 --
 ALTER TABLE `post`
   ADD PRIMARY KEY (`IdPost`),
@@ -121,56 +137,56 @@ ALTER TABLE `post`
   ADD KEY `IdUser` (`IdUser`);
 
 --
--- Indexes for table `user`
+-- Indices de la tabla `users`
 --
-ALTER TABLE `user`
+ALTER TABLE `users`
   ADD PRIMARY KEY (`IdUser`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT de las tablas volcadas
 --
 
 --
--- AUTO_INCREMENT for table `leads`
+-- AUTO_INCREMENT de la tabla `leads`
 --
 ALTER TABLE `leads`
-  MODIFY `IdLead` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `IdLead` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `mediaphotos`
+-- AUTO_INCREMENT de la tabla `mediaphotos`
 --
 ALTER TABLE `mediaphotos`
   MODIFY `IdPhoto` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `mediavideos`
+-- AUTO_INCREMENT de la tabla `mediavideos`
 --
 ALTER TABLE `mediavideos`
   MODIFY `IdVideo` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `post`
+-- AUTO_INCREMENT de la tabla `post`
 --
 ALTER TABLE `post`
   MODIFY `IdPost` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT de la tabla `users`
 --
-ALTER TABLE `user`
-  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `users`
+  MODIFY `IdUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- Constraints for dumped tables
+-- Restricciones para tablas volcadas
 --
 
 --
--- Constraints for table `post`
+-- Filtros para la tabla `post`
 --
 ALTER TABLE `post`
   ADD CONSTRAINT `IdPhoto` FOREIGN KEY (`IdPhoto`) REFERENCES `mediaphotos` (`IdPhoto`),
-  ADD CONSTRAINT `IdUser` FOREIGN KEY (`IdUser`) REFERENCES `user` (`IdUser`),
-  ADD CONSTRAINT `IdVideo` FOREIGN KEY (`IdVideo`) REFERENCES `mediavideos` (`IdVideo`);
+  ADD CONSTRAINT `IdVideo` FOREIGN KEY (`IdVideo`) REFERENCES `mediavideos` (`IdVideo`),
+  ADD CONSTRAINT `post_ibfk_1` FOREIGN KEY (`IdUser`) REFERENCES `users` (`IdUser`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

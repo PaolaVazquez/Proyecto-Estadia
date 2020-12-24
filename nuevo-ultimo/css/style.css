@@ -3,6 +3,10 @@
     font-family: "Titulos";
     src: url("../css/fonts/Zing_2.otf");
 }
+.buttons{
+    align-items: center;
+    margin-bottom: 25px;
+}
 .tank-you{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Cabo-alberca.jpg);
     height: 90vh;
@@ -614,7 +618,7 @@ th{
 }
 .header-edit{
     background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../img/Cabo-playa4.jpg);
-    height: 100vh;
+    height: 140vh;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
