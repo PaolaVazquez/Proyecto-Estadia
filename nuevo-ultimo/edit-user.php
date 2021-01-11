@@ -51,7 +51,7 @@
               </ul>
             </div>
           </nav>
-
+  <form action="app/">
             <div class="perfil">
                 <h1>EDIT USER</h1>
                 <div class="datos">
@@ -84,7 +84,7 @@
                 <input class="btn-add" type="button" value="CANCEL">
 
             </div>
-
+            </form>
     </header>
 
     <footer>

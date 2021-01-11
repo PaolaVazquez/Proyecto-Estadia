@@ -45,7 +45,7 @@
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
                         <a class="dropdown-item" href="consultar.php"> USERS</a>
                         <a class="dropdown-item" href="consultar-lead.php"> LEADS</a>
-                        <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
+                        <a class="dropdown-item" href="app/cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
               </ul>

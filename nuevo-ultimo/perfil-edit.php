@@ -41,7 +41,7 @@
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="perfil.html">MY PROFILE</a>
                         <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>  
-                        <a class="dropdown-item" href="cerrar_sesion.php">SIGN OUT</a>
+                        <a class="dropdown-item" href="app/cerrar_sesion.php">SIGN OUT</a>
 
                 </li>
               </ul>

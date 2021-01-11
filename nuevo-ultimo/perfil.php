@@ -50,6 +50,7 @@
             </div>
           </nav>
           <?php
+          
     include("muestra-perfil.php");
   
   ?>

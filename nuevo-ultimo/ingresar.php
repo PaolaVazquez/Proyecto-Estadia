@@ -4,8 +4,8 @@ $usu = $_POST['usuario'];
 $contrasena = $_POST ['contrasena']; 
 
 
-$usuario = "root";
-$password = "";
+$usuario = "mkteam";
+$password = "M4rketing.digital";
 $servidor = "localhost";
 $BD = "tafer";
 
@@ -15,30 +15,7 @@ session_start();
 $error = '';
 
 
-/*
-if(isset($_POST['submit'])){
-    if(empty($_POST['usuario']) || empty($_POST['contrasena'])){
-        $error = "Username or Password is invalid";
-    }
-    else {
-        
 
-        $usu = mysqli_real_escape_string($conection, (strip_tags($usu,ENT_QUOTES)));
-        $contrasena = sha1($contrasena);
-
-        $sql = "SELECT Fname, Pass, Access FROM users WHERE Fname = ' " .$usu. "' AND Pass = '" .$contrasena. "';";
-        $query = mysqli_query($conection, $sql);
-        $counter = mysqli_num_rows($query);
-
-        if($counter == 1){
-            $_SESSION['login_user_sys']=$usu;
-            header("Location:perfil.php");
-        } else {
-            $error = "Username or Password is invalid";
-        }
-    }
-}
-*/
 
 //VALIDAR LA CONEXIÓN DE BASE DE DATOS
 if($conection ->connect_error){
@@ -70,3 +47,4 @@ if($resultado){
 
 
 mysqli_close($conection);
+?>

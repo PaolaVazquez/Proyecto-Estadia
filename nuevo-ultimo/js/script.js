@@ -16,41 +16,32 @@ if(myCookie = 'false'){
 
 //SUBIR IMAGENES AL SERVIDOR
 
-//Cachamos el evento change
-$(document).on("change", "#add-new-photo", function(){
-    var supportedImages = ["image/jpeg", "images/png", "images/gif"];
+//Se cacha ele evento change
+$(document).on("change", "#file", function (e){
+    var element;
+    var supportedImage = ["images/jpeg", "image/png", "image/gif"];
     var image = this.files[0].type;
-    
-    if (supportedImages.indexOf(image) != -1){
-        var formData = new FormData($("#Formulario")[0]);
-
-        $.ajax({
-            url: "process.php",
-            type: "post",
-            data: formData,
-            cache: false,
-            contentType: false,
-            processData: false,
-            beforeSend: function(res){
-                console.log(res);
-            },
-            success: function(e){
-                console.log(e.responseText);
-            },
-            error: function(e){
-                console.log(e.responseText);
-            }
-        });
+    var seEncontraronElementosNoValidos = false;
+  
+    if (supportedImage.indexOf(image) != -1) {
+  
+      var formData = new FormData($("#Formulario")[0]);
+  
+      $.ajax({
+        url: "process.php",
+        type: "post",
+        data: formData,
+        cahe: false,
+        contentType: false,
+        processData: false,
+        error: function(e){
+        console.log(e.responseText);
+        }
+      });
+      
     }
-    else
-    alert ("Sube una imagen");
-
-    
-    
-
-
-});
-
+  });
+  
 
 
 

@@ -1,6 +1,6 @@
 <?php
-$usuario = "root";
-$password = "";
+$usuario = "mkteam";
+$password = "M4rketing.digital";
 $servidor = "localhost";
 $BD = "tafer";
 
