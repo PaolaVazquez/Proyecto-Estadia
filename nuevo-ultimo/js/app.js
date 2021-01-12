@@ -7,14 +7,30 @@ var getData = function(){
     if(Fname == ""){
         document.getElementById("mce-FNAME").focus();
     } else if (Lname == ""){
-        var Lname = document.getElementById("mce-LNAME").focus();
+        document.getElementById("mce-LNAME").focus();
     }else if (phone == ""){
-        var phone = document.getElementById("mce-PHONE").focus();
+        document.getElementById("mce-PHONE").focus();
     }else if (email == ""){
-        var email = document.getElementById("mce-EMAIL").focus();
+        document.getElementById("mce-EMAIL").focus();
     }
     else{
-        document.write('No se pueden insertar los datos');
+        if(!isNaN(phone)){
+
+            var lead = new Leads(Fname, Lname, phone, email, "");
+        document.getElementById("mce-FNAME").value = "";
+        document.getElementById("mce-LNAME").value = "";
+        document.getElementById("mce-PHONE").value = "";
+        document.getElementById("mce-EMAIL").value = "";
+        document.getElementById("mce-FNAME").focus();
+
+       
+        }
+        
     }
 
+}
+var searchLead = function(){
+    var textSearch = $("input#caja_busqueda").val();
+    var lead = new Leads(textSearch, "", "consult.php");
+    lead.searchLead();
 }

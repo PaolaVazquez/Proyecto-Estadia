@@ -55,7 +55,7 @@
             <h1>LEADS</h1>
               <div class="buscar">
                 <label for="caja_busqueda" id="buscar">Search: </label>
-                <input type="text" name="caja_busqueda" id="caja_busqueda">
+                <input type="text" name="caja_busqueda" id="caja_busqueda" onKeyUp="searchLead();">
                 <i class="fas fa-search" type="submit"></i>
               </div>
               <div class="datos-tabla">
@@ -71,7 +71,7 @@
                       
                   </tr>
               </thead>
-              <tbody>
+              <tbody id="resultSearch">
                   <?php
                     include("muestra-leads.php")
                   ?>
@@ -104,9 +104,19 @@
   
         </div>
       </footer>
+      
     <script scr="js/filtro.js" ></script>
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/app.js"></script>
+      <script src="js/leads.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>  
 </body>
 
 </html>
+<script>
+  $.().ready(function(){
+    $("#caja_busqueda").focus();
+    searchLead();
+  });
+  </script>
