@@ -1,6 +1,6 @@
 <?php
-$usuario = "mkteam";
-$password = "M4rketing.digital";
+$usuario = "root";
+$password = "";
 $servidor = "localhost";
 $BD = "tafer";
 
@@ -20,7 +20,7 @@ if($inc){
             $phone = $row ['Phone'];
             $email = $row ['Email'];
             $type_user = $row['Access'];
-           
+
             ?>
             <link rel="stylesheet" href="css/style.css">
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
@@ -34,7 +34,7 @@ if($inc){
                       <td><?php echo $phone;?></td>
                       <td><?php echo $email;?></td>
                       <td><?php echo $type_user;?></td>
-                      
+
 
                   </tr>
 

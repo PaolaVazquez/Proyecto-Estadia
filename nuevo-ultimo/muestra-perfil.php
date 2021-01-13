@@ -1,7 +1,7 @@
 <?php
 
-$usuario = "mkteam";
-    $password = "M4rketing.digital";
+$usuario = "root";
+    $password = "";
     $servidor = "localhost";
     $BD = "tafer";
 
@@ -77,7 +77,7 @@ $resultado = $gsnet->fectAll();
                 <label>Type of User: </label> <br>
                <input type="text" disabled> <?php echo $resultado['Access']; ?>
             </div>
-            
+
 
         </div>
 <?php

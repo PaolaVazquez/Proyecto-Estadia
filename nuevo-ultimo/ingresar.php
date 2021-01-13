@@ -1,11 +1,11 @@
-<?php 
+<?php
 include('conection.php');
 $usu = $_POST['usuario'];
-$contrasena = $_POST ['contrasena']; 
+$contrasena = $_POST ['contrasena'];
 
 
-$usuario = "mkteam";
-$password = "M4rketing.digital";
+$usuario = "root";
+$password = "";
 $servidor = "localhost";
 $BD = "tafer";
 
@@ -38,7 +38,7 @@ if ($resultado = $usu && $resultado = $contrasena && $resultado = 'ADMINISTRADOR
 if($resultado){
     $_SESSION['Fname'] = $usu;
 
-    //REDIRECCIONAMOS 
+    //REDIRECCIONAMOS
     header("Location:perfil.php");
 } else{
     echo'El usuario no es valido, <a href="login.php"> intenta de nuevo </a>.<br/>';

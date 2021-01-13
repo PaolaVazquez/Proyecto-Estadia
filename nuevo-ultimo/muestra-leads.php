@@ -1,6 +1,6 @@
 <?php
-$usuario = "mkteam";
-$password = "M4rketing.digital";
+$usuario = "root";
+$password = "";
 $servidor = "localhost";
 $BD = "tafer";
 
@@ -32,7 +32,7 @@ if($inc){
                       <td><?php echo $phone;?></td>
                       <td><?php echo $email;?></td>
                       <td><?php echo $fecha;?></td>
-                      
+
 
                   </tr>
 

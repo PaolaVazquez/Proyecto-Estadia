@@ -22,15 +22,16 @@ var getData = function(){
         document.getElementById("mce-PHONE").value = "";
         document.getElementById("mce-EMAIL").value = "";
         document.getElementById("mce-FNAME").focus();
+        searchLead();
 
-       
+
         }
-        
+
     }
 
 }
 var searchLead = function(){
     var textSearch = $("input#caja_busqueda").val();
-    var lead = new Leads(textSearch, "", "consult.php");
-    lead.searchLead();
+    var leads = new Leads(textSearch, "", "consult.php");
+    leads.searchLead();
 }

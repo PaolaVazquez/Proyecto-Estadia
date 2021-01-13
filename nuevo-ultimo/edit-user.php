@@ -40,7 +40,7 @@
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="vista-admin.php">MY PROFILE</a>
-                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>  
+                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>
                         <a class="dropdown-item" href="agregar.php">ADD USER</a>
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
                         <a class="dropdown-item" href="consultar.php">USERS</a>
@@ -51,29 +51,29 @@
               </ul>
             </div>
           </nav>
-  <form action="app/">
+  <form action="edit-datos.php" method="POST">
             <div class="perfil">
                 <h1>EDIT USER</h1>
                 <div class="datos">
                     <label>First Name:  </label>
-                    <input type="text">
+                    <input type="text"  name="Fname" id="Fname">
                 </div>
 
                 <div class="datos">
                     <label>Last Name:</label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="Lname" id="Lname">
                 </div>
                 <div class="datos">
                     <label for="">Email:</label>
-                    <input type="email">
+                    <input type="email" name="email" id="email">
                 </div>
                 <div class="datos">
                     <label>Phone:</label>
-                    <input type="text">
+                    <input type="text" name="phone" id="phone">
                 </div>
                 <div class="datos">
                     <label>Type of User: </label>
-                    <select name="Users" id="users">
+                    <select name="Users" id="Users" >
                         <option value="select">Select</option>
                         <option value="Editor">Editor</option>
                         <option value="Admin">Administrator</option>
@@ -84,13 +84,13 @@
                 <input class="btn-add" type="button" value="CANCEL">
 
             </div>
-            </form>
+          </form>
     </header>
 
     <footer>
         <div class="container-fluid">
           <div class="row rowspacing text-center">
-       
+
             <div class="direction col-sm-4">
                 <h1>FELIZMENTE AGRADECIDOS</h1>
             </div>
@@ -105,10 +105,10 @@
                 <a href=""> <img src="img/MKT_Log in Logo-01.png" alt="MKT"> </a>
             </div>
           </div>
-  
+
         </div>
       </footer>
-    
+
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
 </body>

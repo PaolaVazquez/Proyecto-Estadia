@@ -4,8 +4,8 @@ $message = "";
 
 
 
-    $usuario = "mkteam";
-    $password = "M4rketing.digital";
+    $usuario = "root";
+    $password = "";
     $servidor = "localhost";
     $BD = "tafer";
 require("conection.php");

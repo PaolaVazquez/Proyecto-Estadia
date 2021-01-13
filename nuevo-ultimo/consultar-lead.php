@@ -40,7 +40,7 @@
                       </a>
                       <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="vista-admin.php">MY PROFILE</a>
-                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>  
+                        <a class="dropdown-item" href="edit-wp.html">EDIT WEB PAGE </a>
                         <a class="dropdown-item" href="agregar.php">ADD USER</a>
                         <a class="dropdown-item" href="edit-user.php">EDIT USER</a>
                         <a class="dropdown-item" href="consultar.php"> USER</a>
@@ -68,7 +68,7 @@
                       <th>Phone</th>
                       <th>E-mail</th>
                       <th>Date Register</th>
-                      
+
                   </tr>
               </thead>
               <tbody id="resultSearch">
@@ -79,14 +79,14 @@
           </table>
           </div>
         </div>
-         
+
     </header>
 
-   
+
     <footer>
         <div class="container-fluid">
           <div class="row rowspacing text-center">
-       
+
             <div class="direction col-sm-4">
                 <h1>FELIZMENTE AGRADECIDOS</h1>
             </div>
@@ -101,22 +101,22 @@
                 <a href=""> <img src="img/MKT_Log in Logo-01.png" alt="MKT"> </a>
             </div>
           </div>
-  
+
         </div>
       </footer>
-      
+
     <script scr="js/filtro.js" ></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/app.js"></script>
       <script src="js/leads.js"></script>
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>  
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
+      <script>
+        $().ready(function(){
+          $("#caja_busqueda").focus();
+          searchLead();
+        });
+        </script>
 </body>
 
 </html>
-<script>
-  $.().ready(function(){
-    $("#caja_busqueda").focus();
-    searchLead();
-  });
-  </script>
