@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light ">
-            <a class="navbar-brand" href="index.html"><img src="img/BVM-blanco.png" ></a>
+            <a class="navbar-brand" href="index.html"><img src="img/BVM-blanco.png" id="marca"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" >
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -102,7 +102,7 @@
       <h1>Visit our all-stars destinations!</h1>
         <div class="row">
             <div class="imagen col-sm-6">
-                <img src="img/vallarta_1.jpg" alt="PUERTO VALLARTA">
+                <img src="img/PV-playa-2.jpg" alt="PUERTO VALLARTA" id="Destino-1" onclick="cambiarImagen(this)">
             </div>
             <div class="description col-sm-6">
                 <h1>PUERTO VALLARTA</h1>
@@ -118,12 +118,12 @@
                   Experience an isolated village where crystal clear waters surround extraordinary paintings and petroglyphs.</p>
             </div>
             <div class="imagen col-sm-6">
-              <img src="img/optimizada_los-cabos.jpg" alt="CABOS">
+              <img src="img/Loreto-playa.jpg" alt="LORETO" id="Destino-2">
             </div>
         </div>
         <div class="row">
             <div class="imagen col-sm-6">
-                <img src="img/cancun-portada.jpg" alt="CANCUN">
+                <img src="img/Cabo-arco2.jpg" alt="CABOS" id="Destino-3">
             </div>
             <div class="description col-sm-6">
               <h1>CABOS SAN LUCAS</h1>
@@ -148,8 +148,8 @@
                     Resort Fees (if applicable) are collected during your verification call. This fee is a reservation processing fee.</p>
             </div>
             <div class="redes col-sm-4">
-                <a href=""> <img src="img/MKT_Iconos FB IG-01.png" > </a>
-                <a href=""> <img src="img/MKT_Iconos FB IG-02.png" > </a>
+                <a href=""> <img src="img/MKT_Iconos FB IG-01.png" id="FB-home"> </a>
+                <a href=""> <img src="img/MKT_Iconos FB IG-02.png" id="IN-home"> </a>
                 <a href="login.php"> <img src="img/MKT_Log in Logo-01.png" > </a>
             </div>
           </div>
@@ -159,7 +159,7 @@
       
       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
       <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
-      <script src="js/script.js" ></script>
+      <script src="js/subir-fotos.js" ></script>
       <script src="js/app.js"></script>
       <script src="js/jquery-3.5.1.js"></script>
       <script src="js/leads.js"></script>

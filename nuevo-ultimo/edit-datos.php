@@ -9,17 +9,19 @@ $BD = "tafer";
 
 $Fname = $_POST['Fname'];
 $Lname = $_POST['Lname'];
-$email = $_POST['email'];
+$email = $_POST['Email'];
 $phone = $_POST['phone'];
 $type = $_POST['Users'];
+$id = $_POST['IdUser'];
 $conection = mysqli_connect ($servidor, $usuario, $password, $BD);
 
 session_start();
 $error = '';
 
-$consulta = "UPDATE users SET Fname  = '$Fname', Lname = '$Lname',Phone = '$phone', Email = '$email', Access = '$type' ";
+$consulta = "UPDATE users SET Fname  = '$Fname', Lname = '$Lname',Phone = '$phone', Email = '$email', Access = '$type' WHERE IdUser = '$id' ";
 $resultado = mysqli_query($conection, $consulta);
-echo "inserte los datos";
-header("location: agregar.php");
+echo "Modificación Correcta";
+header("location: perfil.php");
+
 
  ?>

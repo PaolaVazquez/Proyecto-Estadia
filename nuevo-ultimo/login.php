@@ -43,11 +43,11 @@
              <h1>LOGIN</h1>
              <div class="textbox">
                 <i class="fas fa-user"></i>
-                 <input type="text" placeholder="Username" name="usuario" >
+                 <input type="text" placeholder="Username" name="usuario" id="UserName">
                 </div>
                 <div class="textbox">
                     <i class="fas fa-lock"></i>
-                    <input type="password" placeholder="Password" name="contrasena">
+                    <input type="password" placeholder="Password" name="contrasena" id="pass">
                 </div>
                 <a href="">
                 <input class="btn-login" type="submit" name="submit" value="Sign in" ></a>

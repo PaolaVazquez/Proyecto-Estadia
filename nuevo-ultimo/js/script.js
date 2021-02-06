@@ -51,10 +51,3 @@ $(document).on("click", "Images .image-container", function(e){
 });
 
 });
-
-
-
-var imagenheader = document.getElementById("file");
-function cambiarImagen (imagen){
-  imagenheader.src = imagen.src;
-}

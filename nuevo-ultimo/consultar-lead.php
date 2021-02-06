@@ -58,7 +58,7 @@
                 <input type="text" name="caja_busqueda" id="caja_busqueda" onKeyUp="searchLead();">
                 <i class="fas fa-search" type="submit"></i>
               </div>
-              <div class="datos-tabla">
+              <div class="datos-tabla" id="datos">
             <table  border="1">
               <thead >
                   <tr>
@@ -108,15 +108,16 @@
     <script scr="js/filtro.js" ></script>
     <script src="js/jquery-3.5.1.js"></script>
     <script src="js/app.js"></script>
-      <script src="js/leads.js"></script>
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="js/filtro.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
-      <script>
+     <!-- <script>
         $().ready(function(){
           $("#caja_busqueda").focus();
           searchLead();
         });
-        </script>
+        </script>-->
 </body>
 
 </html>

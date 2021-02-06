@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MKTEAM | Edit User</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
@@ -55,6 +55,27 @@
             <div class="perfil">
                 <h1>EDIT USER</h1>
                 <div class="datos">
+                <label>Type of User: </label>
+                    <select name="usuarios" id="usuarios" >
+                        <option value="" selected="selected">Seleccionar Usuario</option>
+                        <?php
+                        include("conection.php");
+                        $usuario = "root";
+                        $password = "";
+                        $servidor = "localhost";
+                        $BD = "tafer";
+                        $con = mysqli_connect($servidor, $usuario, $password, $BD);
+                        $sql = "SELECT Fname, Lname, Position, Phone, Email, Access FROM users LIMIT 10";
+                        $result = mysqli_query($con, $sql);
+                        while($rows = mysqli_fetch_assoc($result)){
+                          ?>
+                          <option value="<?php echo $rows["id"];?>"><?php echo $rows["Fname"];?></option>
+                        <?php }
+                        mysqli_close($con);
+                        ?>
+                    </select>
+                </div>
+                <div class="datos">
                     <label>First Name:  </label>
                     <input type="text"  name="Fname" id="Fname">
                 </div>
@@ -62,6 +83,10 @@
                 <div class="datos">
                     <label>Last Name:</label>
                     <input type="text" name="Lname" id="Lname">
+                </div>
+                <div class="datos">
+                    <label for="">Position:</label>
+                    <input type="text" name="position" id="position">
                 </div>
                 <div class="datos">
                     <label for="">Email:</label>
@@ -108,8 +133,9 @@
 
         </div>
       </footer>
-
-      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript" src="js/getData.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" ></script>
 </body>
 

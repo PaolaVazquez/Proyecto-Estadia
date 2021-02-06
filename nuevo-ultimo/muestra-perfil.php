@@ -18,7 +18,7 @@ if(!isset($_SESSION['Fname'])){
 
 $id = $_POST['IdUser'];
 function verificarUsuario($id){
-    $sql_leer = 'SELECT Fname FROM users WHERE IdUser = '.$id.' AND Fname = '.$_SESSION['Fname'].'';
+    $sql_leer = 'SELECT Fname, Lname, Position, Phone, Email, Access FROM users WHERE IdUser = '.$id.' AND Fname = '.$_SESSION['Fname'].'';
 
     $gsnet = $pdo->prepare($sql_leer);
     $gsnet->execute($id);
@@ -40,13 +40,15 @@ $resultado = $gsnet->fectAll();
 
 
     if($inc){
-        $consulta = "SELECT Fname, Lname, Phone, Email, Access FROM users WHERE IdUser";
+        $consulta = "SELECT Fname, Lname, Phone, Email, Access FROM users WHERE IdUser = '$id' ";
         $resultado = mysqli_query($conection, $consulta);
 
         if($resultado){
             while($row = $resultado->fetch_array()){
+                $id = $row ['IdUser'];
                 $Fname = $row ['Fname'];
                 $Lname = $row ['Lname'];
+                $position = $row ['Position'];
                 $Phone = $row ['Phone'];
                 $email = $row ['Email'];
                 $Access = $row ['Access'];
@@ -58,24 +60,28 @@ $resultado = $gsnet->fectAll();
             <h1>PROFILE</h1>
             <div class="datos">
                 <label>First Name:  </label> <br>
-                <input type="text" disabled> <?php echo $resultado['Fname']; ?>
+                <input type="text" disabled id="firtsname"> <?php echo $resultado['Fname']; ?>
+            </div>
+            <div class="datos">
+                <label>Last Name:</label> <br>
+                <input type="text" disabled id="lastname"> <?php echo $resultado['Lname']; ?>
             </div>
 
             <div class="datos">
-                <label>Last Name:</label> <br>
-                <input type="text" disabled> <?php echo $resultado['Lname']; ?>
+                <label>Position:</label> <br>
+                <input type="text" disabled id="lastname"> <?php echo $resultado['Position']; ?>
             </div>
             <div class="datos">
                 <label for="">Email:</label> <br>
-                <input type="email" disabled> <?php echo $resultado['Email']; ?>
+                <input type="email" disabled id="e-mail"> <?php echo $resultado['Email']; ?>
             </div>
             <div class="datos">
                 <label>Phone:</label> <br>
-                <input type="text" disabled> <?php echo $resultado['Phone']; ?>
+                <input type="text" disabled id="tel"> <?php echo $resultado['Phone']; ?>
             </div>
             <div class="datos">
                 <label>Type of User: </label> <br>
-               <input type="text" disabled> <?php echo $resultado['Access']; ?>
+               <input type="text" disabled id="access"> <?php echo $resultado['Access']; ?>
             </div>
 
 

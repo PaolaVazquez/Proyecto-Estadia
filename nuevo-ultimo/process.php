@@ -1,6 +1,5 @@
 <?php
 
-
 try {
   if (isset($_FILES["file"])) {
     echo "<pre>";
@@ -28,6 +27,15 @@ try {
   }
 } catch (Exception $e) {
   echo $e->getMessage();
+}
+
+/*Subir fichero*/
+if(isset($_POST['submit']) && !empty($_FILES['file']['name'])){
+  if(move_uploaded_file($_FILES['file']['tmp_name'], "img/".$_FILES['file']['name'])){
+    echo 'File has uploades successfully';
+  }else{
+    echo 'Some problem ocurred, please try again';
+  }
 }
 
 
