@@ -5,6 +5,7 @@
    $phone = $_POST['PHONE'];
    $email = $_POST['EMAIL'];
    $pass = $_POST['PASSWORD'];
+   $password_hash = password_hash($pass, PASSWORD_BCRYPT);
    $puesto = $_POST['POSITION'];
    $type = $_POST['ACCESS'];
 
@@ -29,17 +30,17 @@
 
   /**INGRESAR DATOS DE LOS USUARIOS**/
        if (!empty($_POST['FNAME']) && !empty($_POST['LNAME']) &&
-            !empty($_POST['PASSWORD']) &&!empty($_POST['POSITION']) && 
-            !empty($_POST['PHONE']) && !empty($_POST['EMAIL']) && 
+            !empty($_POST['PASSWORD']) &&!empty($_POST['POSITION']) &&
+            !empty($_POST['PHONE']) && !empty($_POST['EMAIL']) &&
            !empty($_POST['ACCESS'])){
              $consulta = "INSERT INTO users (Fname, Lname, Pass, Position, Phone, Email, Access) VALUES ('$Fname', '$Lname','$pass', '$puesto', '$phone', '$email','$type')";
              $resultado = mysqli_query($conection, $consulta);
              echo "inserte los datos";
              header("location: agregar.php");
-            
+
 
            }else {
-            
+
              echo "Error al Enviar los Datos";
              mysqli_error($conection);
            }
@@ -56,8 +57,8 @@
                echo '<script languaje="javascript"> alert("Usuario ya registrado"); </script>';
              }
            }
-   
-        
 
-   
+
+
+
 ?>

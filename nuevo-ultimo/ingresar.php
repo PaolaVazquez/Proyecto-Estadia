@@ -1,7 +1,7 @@
 <?php
 include('conection.php');
-$usu = $_POST['usuario'];
-$contrasena = $_POST ['contrasena'];
+session_start();
+
 
 
 $usuario = "root";
@@ -9,9 +9,9 @@ $password = "";
 $servidor = "localhost";
 $BD = "tafer";
 
-$conection = mysqli_connect ($servidor, $usuario, $password, $BD);
+$conection = new mysqli ($servidor, $usuario, $password, $BD);
 
-session_start();
+
 $error = '';
 
 
@@ -21,30 +21,40 @@ $error = '';
 if($conection ->connect_error){
     die("Conection failed: " .$conection->connect_error);
 }
+/*if (isset($_POST['login'])) {*/
+  $usu = $_POST['usuario'];
+  $contrasena = $_POST ['contrasena'];
 
-//CONSULTA SEGURA PARA EVITAR INYECCIONES SQL
-
-$sql = sprintf("SELECT Fname, Pass, Access FROM users WHERE Fname ='%s' AND Pass = '%s'", mysqli_real_escape_string($usu), mysqli_real_escape_string($contrasena));
+$sql = sprintf("SELECT * FROM users WHERE Fname='%s' AND Pass='%s'", mysqli_real_escape_string($usu), mysqli_real_escape_string($contrasena));
 $resultado = $conection->query($sql);
-if ($resultado = $usu && $resultado = $contrasena && $resultado = 'ADMINISTRADOR'){
-    header("Location:vista-admin.php");
 
-}elseif ($resultado = $usu && $resultado = $contrasena && $resultado = 'EDITOR'){
-    header("Location:perfil.php");
+if ($resultado) {
+  $_SESSION['Fname']=$Fname;
+
+  header("HTTP/1.1 302 Moved Temporarily");
+  header("Location:wep-edit.html");
 }else {
-    echo"<h1> Usuario no valido";
+  echo 'El nombre o contraseña son incorrectos, <a href="index.html>Vuelve a intentarlo</a>. <br/>"';
 }
-//VERIFICANDO SI EL USUARIO EXISTE EN LA BASE DE DATOS
-if($resultado){
-    $_SESSION['Fname'] = $usu;
+/*  $query = $conection->prepare("SELECT * FROM users WHERE Fname=:usuario");
+  $query->bindParam("usuario",$usu, PDO::PARAM_STR);
+  $query->execute();
 
-    //REDIRECCIONAMOS
-    header("Location:perfil.php");
-} else{
-    echo'El usuario no es valido, <a href="login.php"> intenta de nuevo </a>.<br/>';
+  $resultado = $query->fetch(PDO::FETCH_ASSOC);
+
+  if (!$resultado) {
+    echo '<p class="error"> Username, password combination is wrong!</p>';
+  }else {
+    if (password_verify($contrasena, $resultado['Pass'])) {
+      $_SESSION['IdUser'] = $resultado['ID'];
+      echo '<p class="success"> Congratulations, you are logged in!</p>';
+      header('Location:perfil.php');
+    }else {
+        echo '<p class="error"> Username, password combination is wrong!</p>';
+    }
+  }
 }
-
-
+*/
 
 mysqli_close($conection);
 ?>
